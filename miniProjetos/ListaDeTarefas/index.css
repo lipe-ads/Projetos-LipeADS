@@ -1,0 +1,70 @@
+*{
+font-family: Arial, Helvetica, sans-serif;
+padding: 0;
+margin: 0;
+justify-content: center;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;/*significa que coloca o conteúdo da esquerda e direita em extremidades opostas*/
+  align-items: center;
+  background-color: rgba(104, 139, 255, 0.822);
+  padding: 0;
+  height: 100px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+h1{
+  display: flex;
+  color:rgb(2, 6, 41);
+  justify-self: center; 
+  padding: 0 33%;
+  padding-top: 20px;
+  margin: 0;
+ 
+}
+
+.menu-principal{
+  display: flex; /*Flexibilidade nos itns*/
+  list-style: none; /*tira aqueles pontos d marcação dos li*/
+  padding: 0 0;
+  margin: 0;
+  justify-content: right;/*Alinhamento dos itens que estão dentro da class*/
+  gap: 5px; /*Deixa um espaço entre os li*/
+  flex-wrap: wrap; /*Permite que os itens quebrem para a proxima linha*/
+  justify-content:center;
+}
+
+.menu-principal a /*Agora fazer a alteração dentro da class mas somente nos links */{
+  text-decoration: none; /*Remov os sublinados dos links*/
+  color:rgb(251, 255, 0);
+  padding: 10px 15px;/*O espaçamento interno dos links sendo o primeiro numero o superior e inferior e o segundo numero os laterais*/
+  display: block; /*Permite o bloqueio do padding pra que não de erro*/
+  min-width: 250px
+
+}
+
+.menu-principal a li:hover{/*:hover significa quee quando eu passar o mouse algo ira acontecer nos lis que estão dentro de as*/
+  color: white;
+  font-size: 18px; /*Auemntar a fonte*/
+  transition: 0.1s ease-in-out,/*Velocidade da transição e p easy-in-out siginifica que vai ser lento o inicio e o fim mas o meio vai acelerar
+  Coloca cvirgula se quiser alterar a transição de mais algo*/
+  color 0.2s ease-in-out;
+
+}
+img{
+  display: flex;
+  width: 140px;
+
+}
+
+.right-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+}
