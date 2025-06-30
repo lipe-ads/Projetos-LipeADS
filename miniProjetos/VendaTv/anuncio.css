@@ -1,0 +1,113 @@
+body {
+  font-family: Montserrat, sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px; 
+  background-color: #fffb0094;
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.1;
+  margin-bottom: 7%;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+figcaption {
+  font-size: 12px;
+  font-style: italic;
+}
+
+a {
+  display: inline-block;
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #c44105;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none; /*Tipo de sublinhado*/
+  text-decoration-color: #ffffff; /*escolhe a cor do sublinhado*/
+}
+a:hover{
+  background-color: #e05e1a;
+  transform: scale(1.02);
+  font-size: 25px;
+  transition-duration: 0.7s ease;
+}
+
+ul li{
+  font-style: italic;
+  color: #035276;
+}
+
+#polegada,
+.precos,
+.condicoes{
+  color: #0588c4;
+}
+
+figure img{
+  padding: 0;
+  margin: 0 auto 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+ul{
+  list-style: none;
+}
+
+
+
+/*Algo interessante:
+
+  text-decoration: none; 
+  *text-decoration-line: underline; 
+
+  /*outra forma de usar esse sublinhado duplo escrevendo menos é:
+
+  text-decoration: underline double #c44105; /* Estilo, tipo e cor */
+
+  /*Algo que aprendi que vai ser util e ainda é interresante:
+
+  :root {
+    --cor-principal: #c44105;
+    --cor-secundaria: #0588c4;
+    --cor-texto-lista: #035276;
+}
+
+a {
+    background-color: var(--cor-principal);
+
+}
+
+#polegada,
+.precos,
+.condicoes {
+    color: var(--cor-secundaria);
+}
+
+ul li {
+    color: var(--cor-texto-lista);
+}
+    
+Para cores que se repetem (#c44105, #0588c4), crie variáveis CSS. Isso facilita a manutenção e mudança de temas.*/
