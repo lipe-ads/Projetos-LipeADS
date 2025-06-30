@@ -1,0 +1,107 @@
+.LOGOS {
+  background-color: blueviolet;
+  border-radius: 7%;
+}
+.amarelo {
+  background-color: rgb(255, 255, 79);
+}
+.azul {
+  background-color: rgb(84, 84, 224);
+}
+.icone-texto-rodape {
+  background-color: plum;
+}
+ /*Cabeçalho*/
+
+body {
+  font-family: montserrat, sans-serif;
+}
+
+
+nav {
+  background-color: #fff;
+  display: block;
+  font-size: 12.8px;
+  padding: 12.8px 16px;
+}
+
+nav ul{
+  display: flex;
+  align-items: start; /*alinhamento dos itens*/
+  text-align: center; /*Alinahmento dos textos*/
+  gap: 2.0rem;/*Espaçamento dos itens*/
+}
+
+ul {
+  list-style: none; /*Tira o ponto que tem no ibnicio dos links*/
+}
+
+nav ul li a{
+  color: #112e61;
+  text-transform: uppercase; /*Uppercase= tudo maiusculo*/
+  text-decoration: none;  /*Tirar o sublinhado*/
+  font-weight: 600;/*Quase negrito*/
+  cursor: pointer;
+}
+nav ul li a:hover{
+  color: orange;
+  transition: color ease-in 200ms;
+}
+
+img{
+  background-color: #112e61;
+}
+
+/* Seção Hero */
+
+h1{
+  color: #404040;
+  font-size: 25.56px;
+  font-weight: bold;
+}
+
+.secao-hero{
+  background-image: Url(Imagens/FormatoNovo/BACKGROUN-banner-01.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  margin: 0;
+  text-align:justify;
+  text-align: center;
+  background-color: #c44e39a1;
+  
+}
+
+.secao-hero p{
+  color: #404040;
+  font-size: 15.36px;
+}
+
+.div-botao-hero{
+  gap: 2.0rem;
+  
+}
+.botao-secao-hero{
+  background-color: #ff2802;
+  border-radius: 20px;
+  padding: 10px 10px;
+  border-color: aliceblue;
+  border-style:solid;
+}
+
+.botao-secao-hero a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
