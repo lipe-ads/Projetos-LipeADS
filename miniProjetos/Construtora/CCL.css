@@ -1,0 +1,163 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 780px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1.1rem;
+    gap: 1rem;
+  }
+  img {
+    height: 90px;
+    transition: all 0.5s ease;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    max-width: 100%;
+    background-color: #333;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navbar a {
+    font-size: 0.7rem;
+    color: #e7e7e7;
+    text-decoration: none;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .navbar a:hover {
+    transition: all ease-in-out 0.5s;
+    color: rgba(255, 251, 0, 0.685);
+    font-size: 0.8rem;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1.8rem;
+    list-style: none;
+  }
+}
+
+/* Main */
+@media (max-width: 780px) {
+  .home-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: start;
+    text-transform: uppercase;
+    justify-content: center;
+    padding: 30px;
+    margin: 0;
+    width: 95% auto;
+    height: 30rem;
+    position: relative;
+    bottom: 20px;
+    gap: 1rem;
+    background-image: url(img/construcao-rua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .home-principal button {
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #c5c5c5c9;
+    font-weight: 700;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 4rem;
+    transition: all 0.3 ease-in;
+  }
+  .home-principal button:hover {
+    font-size: 16px;
+    width: 8.2rem;
+    height: 3.2rem;
+    padding: 10px;
+    background-color: #e7e7e7;
+  }
+  .home-principal h1 {
+    color: #ffffff;
+    display: flex;
+    justify-content: start;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 3px 5px 3px rgb(0, 0, 0);
+  }
+  .abastecimento {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center ;
+    margin: auto;
+    padding: 1.5rem;
+    gap: 1rem;
+    max-width: 800px;
+    width: 90%;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.582);
+  }
+  .abastecimento-text {
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .abastecimento-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+  }
+  .abastecimento-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+  .abastecimento-text h2{
+    display: flex;
+    border-top: 0;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 2px rgba(116, 116, 116, 0.582);
+  }
+  
+  
+}
