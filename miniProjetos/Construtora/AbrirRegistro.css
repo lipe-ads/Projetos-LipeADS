@@ -1,0 +1,210 @@
+/* Cabeçalho */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 780px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1.1rem;
+    gap: 1rem;
+  }
+  img {
+    height: 80px;
+    transition: all 0.5s ease;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    max-width: 100%;
+    background-color: #e7e7e7;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navbar a {
+    font-size: 0.7rem;
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .navbar a:hover {
+    transition: all ease-in-out 0.5s;
+    color: rgba(255, 251, 0, 0.685);
+    font-size: 0.8rem;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1.8rem;
+    list-style: none;
+  }
+}
+
+h1{
+  text-align: center;
+  margin: 2.5rem;
+}
+
+/* .jump-text span{
+  display: inline-block;
+  transition: transform 0.3s ease;
+  animation: jump 1s infinite;
+}
+.jump-text span:nth-child(1) { animation-delay: 0s; }
+.jump-text span:nth-child(2) { animation-delay: 0.05s; }
+.jump-text span:nth-child(3) { animation-delay: 0.1s; }
+.jump-text span:nth-child(4) { animation-delay: 0.15s; }
+.jump-text span:nth-child(5) { animation-delay: 0.2s; }
+.jump-text span:nth-child(6) { animation-delay: 0.25s; }
+.jump-text span:nth-child(7) { animation-delay: 0.3s; }
+.jump-text span:nth-child(8) { animation-delay: 0.35s; }
+.jump-text span:nth-child(9) { animation-delay: 0.4s; }
+.jump-text span:nth-child(10) { animation-delay: 0.4s; }
+.jump-text span:nth-child(11) { animation-delay: 0.4s; }
+.jump-text span:nth-child(12) { animation-delay: 0.4s; }
+
+;.jump-text:hover span{
+  animation-play-state: running;
+}
+
+@keyframes jump{
+0%, 100%{
+  transform: translateY(0);
+}
+50%{
+  transform: translateY(-8px);
+}
+}  */
+
+/* Main */
+
+@media (max-width: 780px) {
+  h2 {
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    width: 14rem;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ffffffc7;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    font-size: 1.5rem;
+    color: #000000;
+    transform: rotate(-5deg)
+  }
+  h2:hover {
+    transform: scale(1.05);
+    color: #e7e7e7;
+    background-color: #333333;
+    letter-spacing: 0.5px;
+    transform: rotate(5deg);
+  }
+
+  main {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .section-formulario {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: left;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    background-color: #e7e7e7;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    text-align: left;
+  }
+  input,
+  textarea {
+    display: flex;
+    padding: 0.8rem 5rem;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  label {
+    color: black;
+    font-weight: bold;
+  }
+  input[type='file'] {
+    display: flex;
+    margin: 0;
+    padding: 5%;
+    border: 1px solid #3333334f;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #333;
+  }
+
+  input[type='file']:hover {
+    display: flex;
+    margin: 0;
+    padding: 5%;
+    border: 1px solid #3333334f;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    background-color: #333;
+  }
+  button {
+    color: #ccc;
+    font-weight: 900;
+    background-color: #333333;
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    padding: 5% 41%;
+    border-radius: 8px;
+  }
+  button:hover {
+    transition: all 0.5s ease;
+    background-color: #ffffffc5;
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abrir Registros</title>
+    <link rel="stylesheet" href="AbrirRegistro.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#navegacao-tela-inicial"
+        ><img src="img/logoCCL.png" alt="Logo-CCL"
+      /></a>
+      <nav class="navbar" id="navegacao-tela-inicial">
+        <ul class="menu">
+          <li><a href="registros.html">Registros</a></li>
+          <li><a href="CCL.html">Menu</a></li>
+          <li><a href="abastecimentos.html">Abastecimentos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Registros de Processos <span class="destaque-CCL">CCL</span></h1>
+    <main>
+      <h2>Abrir Registros</h2>
+      <section class="section-formulario">
+        <form action="cadastro" method="post" enctype="multipart/form-data">
+          <p>
+            <label for="nomeUsuario"> Nome do Colaborador:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              required
+              placeholder="Digite seu nome aqui"
+            />
+          </p>
+          <p>
+            <label for="CPF">CPF:</label>
+            <input
+              type="text"
+              id="CPF"
+              name="CPF"
+              pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+              required
+              placeholder="***.***.***-**"
+            />
+          </p>
+          <p>
+            <label for="Ocorrido">Processo:</label>
+            <input
+              type="text"
+              name="ocorrido"
+              required
+              placeholder="Nome do processo"
+            />
+          </p>
+          <p>
+            <label for="DetalhesOcorrido">Detalhes:</label>
+            <textarea
+              name="DetalhesOcorrido"
+              id="DetalhesOcorrido"
+              rows="4"
+              placeholder="Descreva o que aconteceu no processo efetuado"
+            ></textarea>
+          </p>
+          <p>
+            <label for="foto">Anexar Fotos do Processo:</label>
+            <input type="file" name="fotoProcesso" id="fotoProcesso" required />
+          </p>
+          <p>
+            <label for="dataProcesso">Insira a Data Atual:</label>
+            <input type="datetime-local" name="" id="" />
+          </p>
+          <p>
+           <button type="submit">Enviar</button>
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
