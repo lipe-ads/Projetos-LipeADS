@@ -1,80 +1,78 @@
-.LOGOS {
-  background-color: blueviolet;
-  border-radius: 7%;
-}
-.amarelo {
-  background-color: rgb(255, 255, 79);
-}
-.azul {
-  background-color: rgb(84, 84, 224);
-}
-.icone-texto-rodape {
-  background-color: plum;
-}
+
  /*Cabeçalho*/
 
 body {
   font-family: montserrat, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 
 nav {
-  background-color: #fff;
-  display: block;
+  background-color: #ffffff;
+  display:block;
   font-size: 12.8px;
-  padding: 12.8px 16px;
+  padding: 12.8px 0;
+  margin: 0;
+  border: none;
 }
 
 nav ul{
   display: flex;
-  align-items: start; /*alinhamento dos itens*/
+  align-items: center; /*alinhamento dos itens*/
   text-align: center; /*Alinahmento dos textos*/
-  gap: 2.0rem;/*Espaçamento dos itens*/
+  gap: 1.8rem;/*Espaçamento dos itens*/
 }
 
 ul {
-  list-style: none; /*Tira o ponto que tem no ibnicio dos links*/
+  list-style:none; /*Tira o ponto que tem no ibnicio dos links*/
 }
 
 nav ul li a{
-  color: #112e61;
+  color: #CC0697;
   text-transform: uppercase; /*Uppercase= tudo maiusculo*/
   text-decoration: none;  /*Tirar o sublinhado*/
   font-weight: 600;/*Quase negrito*/
   cursor: pointer;
 }
 nav ul li a:hover{
-  color: orange;
+  color: #221D9B;
   transition: color ease-in 200ms;
 }
 
-img{
-  background-color: #112e61;
+header img{
+  background-color: #ffffff;
+  position: absolute;
+  width: 10%;
+  
 }
 
 /* Seção Hero */
 
 h1{
-  color: #404040;
+  color: #221D9B;
   font-size: 25.56px;
   font-weight: bold;
 }
 
 .secao-hero{
-  background-image: Url(Imagens/FormatoNovo/BACKGROUN-banner-01.webp);
-  background-position: 50%;
-  background-repeat: no-repeat;
+  background-image: Url(img/um-fundo-rosa-e-branco-com-um-redemoinho-no-meio_483537-4357.avif);
+  display: block;
+  background-position: center;
+  background-repeat:repeat;
   background-size: cover;
-  padding: 50px;
+  width: 100%;
+  height: 10%;
+  padding: 45px 0;
   margin: 0;
   text-align:justify;
   text-align: center;
-  background-color: #c44e39a1;
+  background-color:none;
   
 }
 
 .secao-hero p{
-  color: #404040;
+  color: #ffffff;
   font-size: 15.36px;
 }
 
@@ -83,11 +81,20 @@ h1{
   
 }
 .botao-secao-hero{
-  background-color: #ff2802;
+  background-color: #221D9B;
   border-radius: 20px;
   padding: 10px 10px;
   border-color: aliceblue;
-  border-style:solid;
+  border-bottom-style:groove;
+}
+
+.botao-secao-hero:hover{
+  transition: ease-in-out 0.3s;
+  font-size: 16.5px;
+  background-color: #CC0697;
+  border-bottom-style:dashed ;
+  border-color: #ffffff;
+
 }
 
 .botao-secao-hero a{
@@ -96,8 +103,64 @@ h1{
   font-weight: bold;
 }
 
+/* Seção Gratuito */
 
+.gratuito-treinamento{
+  padding: 2rem;
+  justify-content: center;
+  text-align: center;
+  background-color: #e7e7e7;
+  border-radius: 50px;
+  margin-top: 0;
+  width: 30%;
+}
 
+.img-superiores-treinamentos-gratuito a img{
+  display: inline-block;
+  width: 1.5rem;
+  padding: 0.5rem;
+  box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.15);
+  background-color: #e7e7e7;
+  border-radius: 50%;
+  justify-items: center;
+}
+
+.rede-gratuito li{
+  background-color: #641499d3;
+  padding: 5px;
+  border-radius: 1rem;
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  justify-content:center ;
+}
+
+.rede-gratuito{
+  text-decoration: none;
+}
+
+.rede-gratuito img{
+  background-image: radial-gradient(circle, #641499, #ffffff52 );
+  border-radius: 50%;
+}
+
+#h3-programacao,
+#h3-treinamento{
+  color: #ffffff;
+  background-color: #641499;
+  background-image: linear-gradient(90deg, #641499, #ffffff8c, #641499);
+  font-weight: bold;
+  display: flex;
+  border-radius: 0.25rem;
+  box-shadow: inset 0 0 0.4rem 0.2rem rgba(255, 255, 255, 0.26);
+  padding: 0.20rem;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+
+}
 
 
 
