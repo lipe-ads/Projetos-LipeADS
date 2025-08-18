@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login - Atividades</title>
+    <script
+      src="https://kit.fontawesome.com/9da89afaa7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Primeira parte de Login/Criar Conta -->
+    <div class="container">
+      <div class="content tela1">
+        <div class="first_column"><br>
+          <h2 class="title title-primary">Bem vindo de Volta!</h2>
+          <p class="description description-primary">
+            É sempre muito bom vê-lo novamente!
+          </p>
+          <p class="description description-primary">
+            Venha fazer o seu login.
+          </p>
+          <button id="signin" class="btn btn-primary">sign in</button>
+        </div>
+        <div class="secund_column">
+          <br>
+          <h2 class="title title-secund">Criando sua conta</h2>
+          <div class="social-midia">
+            <ul class="list-social-midia">
+              <a href="">
+                <li class="item-social-midia">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </li>
+              </a>
+              <a href="">
+                <li class="item-social-midia">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </li>
+              </a>
+              <a href="">
+                <li class="item-social-midia">
+                  <i class="fa-brands fa-google"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <p class="description description-secund">
+            Ou use seu e-mail para criar:
+          </p>
+          <form class="form">
+            <label class="label-input" for="">
+              <i class="fa-solid fa-user icon-modify"></i>
+              <input type="text" placeholder="Nome"
+            /></label>
+            <label class="label-input" for="">
+              <i class="fa-solid fa-inbox icon-modify"></i>
+              <input type="email" placeholder="E-mail"
+            /></label>
+            <label class="label-input" for="">
+              <div class="hidden-password">
+                <i class="fa-solid fa-eye-slash icon-modify"></i>
+              </div>
+              <input type="password" placeholder="Senha"
+            /></label>
+            <button class="btn btn-secund">sign up</button>
+          </form>
+        </div>
+      </div>
+      <!-- Segunda parte de Criar conta/login -->
+      <div class="content tela2">
+        <div class="first_column">
+          <h2 class="title title-primary">Novo por aqui?</h2>
+          <p class="description description-primary">
+            É sempre muito bom ver novos companheiros
+          </p>
+          <p class="description description-primary">Venha criar sua conta.</p>
+          <button id="signup" class="btn btn-primary">sign up</button>
+        </div>
+        <div class="secund_column">
+          <h2 class="title title-secund">Entrando no nosso mundo!</h2>
+          <div class="social-midia">
+            <ul class="list-social-midia">
+              <a href="#">
+                <li class="item-social-midia">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li class="item-social-midia">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li class="item-social-midia">
+                  <i class="fa-brands fa-google"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <p class="description description-secund">
+            Ou use seu e-mail para entrar:
+          </p>
+          <form class="form">
+            <label for="" class="label-input">
+              <i class="fa-solid fa-inbox icon-modify"></i
+              ><input type="email" placeholder="E-mail"
+            /></label>
+            <label for="" class="label-input">
+              <div class="hidden-password">
+                <i class="fa-solid fa-eye-slash icon-modify"></i>
+              </div>
+              <input type="password" placeholder="Senha" />
+            </label>
+            <a class="forgot-password" href="#">Esqueceu a senha?</a>
+            <button class="btn btn-secund"><a href="/Home/home.html">sign in</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
