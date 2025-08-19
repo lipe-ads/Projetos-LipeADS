@@ -48,10 +48,10 @@ body {
     margin: 0 10px;
     text-transform: uppercase;
     font-weight: 700;
+    transition: all 0.3s ease-in-out ;
   }
 
   .navbar a:hover {
-    transition: all ease-in-out 0.5s;
     color: rgba(255, 251, 0, 0.685);
     font-size: 0.8rem;
   }
