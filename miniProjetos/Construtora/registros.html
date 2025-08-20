@@ -35,21 +35,30 @@
           <div class="cabecalhoFiltrodiv">
             <ul class="cabecalhoFiltroOpcoes">
               <a href="#">
-                <li>Todos</li>
+                <li onclick="">Todos</li>
               </a>
               <a href="#">
-                <li>Recentes</li>
+                <details>
+                  <summary>Recentes</summary>
+                  <input type="date" name="date-filter" id="date-filter" />
+                </details>
               </a>
               <a href="#">
-                <li>Processo</li>
+                <details>
+                  <summary>Processo</summary>
+                  <input type="text" name="text-filter" id="text-filter">
+                </details>
               </a>
               <a href="#">
-                <li>Colaborador</li>
+                <details>
+                  <summary>Colaborador</summary>
+                  <input type="text" name="text-filter" id="text-filter">
+                </details>
               </a>
             </ul>
           </div>
         </div>
-        <br>
+        <br />
         <div class="ExibicaoRegistros">
           <ul class="ExibicaoRegistros-ul">
             <li class="ExibicaoRegistros-itens">ID</li>

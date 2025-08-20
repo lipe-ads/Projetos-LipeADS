@@ -83,8 +83,10 @@ h1 {
 }
 
 .ExibicaoRegistros-ul {
-  display: flex;
-  gap: 50%;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 3fr 1fr;
+  /* Espaçamento entre as colunas */
+  gap: 15px; 
 }
 
 .ExibicaoRegistros-itens {
