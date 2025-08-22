@@ -35,7 +35,7 @@
           <div class="cabecalhoFiltrodiv">
             <ul class="cabecalhoFiltroOpcoes">
               <a href="#">
-                <li onclick="">Todos</li>
+                <li onclick="exibirTodosOsItens(ArrayRegistros)">Todos</li>
               </a>
               <a href="#">
                 <details>
@@ -46,13 +46,13 @@
               <a href="#">
                 <details>
                   <summary>Processo</summary>
-                  <input type="text" name="text-filter" id="text-filter">
+                  <input type="text" name="text-filter" id="processo-filter" />
                 </details>
               </a>
               <a href="#">
                 <details>
                   <summary>Colaborador</summary>
-                  <input type="text" name="text-filter" id="text-filter">
+                  <input type="text" name="text-filter" id="colaborador-filter" />
                 </details>
               </a>
             </ul>
@@ -61,14 +61,35 @@
         <br />
         <div class="ExibicaoRegistros">
           <ul class="ExibicaoRegistros-ul">
-            <li class="ExibicaoRegistros-itens">ID</li>
-            <li class="ExibicaoRegistros-itens">Processo</li>
-            <li class="ExibicaoRegistros-itens">Colaborador</li>
-            <li class="ExibicaoRegistros-itens">Horario</li>
+            <li class="ExibicaoRegistros-itens">
+              <div class="item-id">001</div>
+              <div class="item-processo">Escavação</div>
+              <div class="item-colaborador">Paulo Vitor</div>
+              <div class="item-data">08/08/25</div>
+            </li>
+            <li class="ExibicaoRegistros-itens">
+              <div class="item-id">002</div>
+              <div class="item-processo">Revisão</div>
+              <div class="item-colaborador">Lucas Martins</div>
+              <div class="item-data">09/08/25</div>
+            </li>
+            <li class="ExibicaoRegistros-itens">
+              <div class="item-id">003</div>
+              <div class="item-processo">Revisão</div>
+              <div class="item-colaborador">Lucas Martins</div>
+              <div class="item-data">09/08/25</div>
+            </li>
+            <li class="ExibicaoRegistros-itens">
+              <div class="item-id">004</div>
+              <div class="item-processo">Revisão</div>
+              <div class="item-colaborador">Lucas Martins</div>
+              <div class="item-data">09/08/25</div>
+            </li>
           </ul>
         </div>
       </div>
       <section></section>
     </div>
+    <script src="registros.js"></script>
   </body>
 </html>
